@@ -136,7 +136,7 @@ picture {
 }
 
 .unordered-list li {
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
   color: var(--stone-600);
   line-height: 1.5;
 
@@ -203,7 +203,7 @@ picture {
 }
 
 .instructions .step {
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
   color: var(--stone-600);
   padding-inline-start: var(--space-s);
   line-height: 1.5;
@@ -238,7 +238,7 @@ picture {
   text-align: left;
   flex: 1;
 
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
   color: var(--stone-600);
   font-weight: 400;
 }
@@ -248,7 +248,7 @@ picture {
   text-align: left;
   flex: 1;
 
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
   color: var(--brown-800);
   font-weight: 700;
 }
