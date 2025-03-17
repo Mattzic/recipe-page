@@ -178,6 +178,7 @@ picture {
   font-size: 1.23rem;
   color: var(--rose-800);
   font-family: 'Outfit';
+  font-weight: 600;
 }
 
 /* Instructions */
