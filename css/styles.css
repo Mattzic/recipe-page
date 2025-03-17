@@ -38,7 +38,7 @@ h2 {
 }
 
 p {
-  font-family: 'Outfit';
+  font-family: Outfit;
   color: var(--stone-600);
   font-size: 1rem;
   line-height: 1.5;
