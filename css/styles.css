@@ -132,7 +132,7 @@ picture {
 .unordered-list {
   display: flex;
   flex-direction: column;
-  gap: var(--space-s);
+  gap: var(--space-xs);
 }
 
 .unordered-list li {
@@ -193,13 +193,6 @@ picture {
 }
 
 /* Instructions */
-/* .instructions {
-  display: flex;
-  flex-direction: column;
-  gap: var(--space-m);
-  margin-inline: var(--space-l);
-} */
-
 .instructions .steps-list {
   display: flex;
   flex-direction: column;
