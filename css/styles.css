@@ -44,12 +44,12 @@ dd {
 
 h1,
 h2 {
-  font-family: 'Young Serif', serif;
+  font-family: 'Young Serif';
   font-weight: 400;
 }
 
 p {
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
   color: var(--stone-600);
   font-size: 1rem;
   line-height: 1.5;
@@ -188,7 +188,7 @@ picture {
 .preparation-time h2 {
   font-size: 1.23rem;
   color: var(--rose-800);
-  font-family: 'Outfit', serif;
+  font-family: 'Outfit';
 }
 
 /* Instructions */
