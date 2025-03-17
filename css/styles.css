@@ -1,0 +1,298 @@
+/* Fonts */
+@font-face {
+  font-family: 'Young Serif';
+  src: url(/assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'Outfit';
+  src: url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+/* Reset */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2 {
+  font-family: 'Young Serif', serif;
+  font-weight: 400;
+}
+
+p {
+  font-family: 'Outfit', serif;
+  color: var(--stone-600);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100svh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* ============================================================================================== */
+:root {
+  --rose-800: #7a284e;
+  --rose-50: #fff7fb;
+
+  --stone-900: #312e2c;
+  --stone-600: #5f564d;
+  --stone-150: #e3ddd7;
+  --stone-100: #f3e5d7;
+
+  --brown-800: #854632;
+
+  --white: #fff;
+
+  --space-l: 2rem;
+  --space-m: 1.5rem;
+  --space-s: 1rem;
+  --space-xs: 0.5rem;
+}
+
+/* Utility */
+.flex-container--l {
+  margin-inline: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-l);
+  justify-content: center;
+  margin-bottom: 4rem;
+}
+
+.flex-container--s {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  margin-inline: var(--space-l);
+}
+
+.title-h2 {
+  color: var(--brown-800);
+  font-size: 1.75rem;
+}
+
+.unordered-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+}
+
+.unordered-list li {
+  font-family: 'Outfit', serif;
+  color: var(--stone-600);
+  line-height: 1.5;
+
+  display: flex;
+  gap: var(--space-s);
+  align-items: center;
+}
+
+.unordered-list li::before {
+  content: '•';
+  color: var(--rose-800);
+  padding-inline-start: var(--space-xs);
+}
+
+.unordered-list li p {
+  padding-inline: var(--space-s);
+}
+
+.line-separator {
+  height: 1px;
+  background: var(--stone-150);
+  margin-inline: var(--space-l);
+}
+
+/* Recipe image */
+.recipe-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: var(--space-xs);
+}
+
+/* Recipe header */
+.recipe-header .recipe-title {
+  font-size: 2.25rem;
+  color: var(--stone-900);
+}
+
+/* Preparation time */
+.preparation-time {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-inline: var(--space-l);
+  padding: 0 var(--space-m);
+  background: var(--rose-50);
+  border-radius: 12px;
+  padding: var(--space-m);
+}
+
+.preparation-time h2 {
+  font-size: 1.23rem;
+  color: var(--rose-800);
+  font-family: 'Outfit', serif;
+}
+
+/* Instructions */
+.instructions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  margin-inline: var(--space-l);
+}
+
+.instructions .steps-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  margin-inline-start: var(--space-xs);
+  /* if padding not set, the li marker seems to be inside the margin area  */
+  /* the marker by default (list-style-position: outside) would display in padding area? */
+  padding-inline-start: var(--space-s);
+}
+
+.instructions .step {
+  font-family: 'Outfit', serif;
+  color: var(--stone-600);
+  padding-inline-start: var(--space-s);
+  line-height: 1.5;
+}
+
+.instructions .step::marker {
+  color: var(--rose-800);
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+/* Nutrition */
+.nutrition-table tr {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-s);
+  border-bottom: 1px solid var(--stone-150);
+  padding-block: 0.75rem;
+}
+
+.nutrition-table tr:first-child {
+  padding-block-start: 0;
+}
+
+.nutrition-table tr:last-child {
+  padding-block-end: 0;
+  border: none;
+}
+
+.nutrition-table th {
+  padding-inline-start: var(--space-l);
+  text-align: left;
+  flex: 1;
+
+  font-family: 'Outfit', serif;
+  color: var(--stone-600);
+  font-weight: 400;
+}
+
+.nutrition-table td {
+  padding-inline-end: var(--space-l);
+  text-align: left;
+  flex: 1;
+
+  font-family: 'Outfit', serif;
+  color: var(--brown-800);
+  font-weight: 700;
+}
+
+footer {
+  text-align: center;
+}
+
+/* Media Queries */
+
+/* Tablet */
+@media (min-width: 768px) {
+  body {
+    background: var(--stone-100);
+  }
+
+  .flex-container--l {
+    max-width: 38.5rem;
+    background: var(--white);
+    margin: 8rem auto;
+    padding: 2.5rem;
+    border-radius: 24px;
+  }
+  .flex-container--s {
+    margin-inline: 0rem;
+  }
+
+  .recipe-image {
+    border-radius: 12px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .flex-container--l {
+    margin: 8rem auto;
+    max-width: 46rem;
+  }
+}
