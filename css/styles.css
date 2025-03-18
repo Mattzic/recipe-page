@@ -167,7 +167,7 @@ picture {
 .preparation-time {
   display: flex;
   flex-direction: column;
-  gap: var(--space-xs);
+  gap: var(--space-s);
   margin-inline: var(--space-l);
   background: var(--rose-50);
   border-radius: 12px;
